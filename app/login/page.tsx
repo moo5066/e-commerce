@@ -6,10 +6,10 @@ const page = () => {
   return (
       <div className='bg-[#FAF7F2] h-screen flex flex-col gap-5 justify-center items-center my-auto'>
         <div>
-      <div className='flex flex-row justify-center items-center gap-2 '>
+      <Link href='/' className='flex flex-row justify-center items-center gap-2 '>
         <span className='text-[#EC6A37]'><MdHome size={40}/></span>
         <p className='text-xl font-bold'>ShopHub</p>
-      </div>
+      </Link>
       <div className='mt-5 bg-white p-10 rounded-lg shadow-lg flex flex-col gap-5 w-96'>
         <h1 className='text-4xl font-bold'>Welcome Back</h1>
         <p className='text-gray-600 text-lg'>Sign in to your account</p>

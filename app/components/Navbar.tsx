@@ -1,6 +1,5 @@
-import React from 'react'
-import { CiShoppingCart } from "react-icons/ci";
 import { MdHome } from "react-icons/md";
+import CartIcon from '@/components/CartIcon';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -11,11 +10,11 @@ const Navbar = () => {
         <h1 className='font-bold text-2xl'>Shop<span className='text-[#EC6A37]'>Hub</span> </h1>
       </div>
       <div className='flex flex-row gap-1 items-center'>
-          <span className=' '><CiShoppingCart size={40}/></span> 
 
-<Link href='/login' className='bg-[#EC6A37] p-2 text-white rounded-lg text-base font-semibold hover:scale-105 transition duration-300 cursor-pointer'>
-   Login
-</Link>
+<CartIcon/>
+<Link href='/login' className='bg-[#EC6A37] p-2 text-white rounded-lg font-semibold hover:scale-105 transition duration-300 cursor-pointer'>
+    Login
+  </Link>
       </div>
       </div>
   )
