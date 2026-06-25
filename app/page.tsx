@@ -29,12 +29,12 @@ const products = await getProducts()
   </div>
   <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-4'>
     {products.slice(0, 10).map((product: any) => (
-      <div key={product.id} className='flex flex-col items-center gap-2 border border-gray-300 rounded-lg p-4'>
+      <Link key={product.id} href={`/products/${product.id}`} className='flex flex-col items-center gap-2 border border-gray-300 rounded-lg p-4'>
         <img src={product.image} alt={product.title} className="h-40 object-contain" />
         <h2 className='text-sm text-center mt-5'>{product.title}</h2>
         <p className='font-bold text-xl'>${product.price}</p>
         <AddToCartButton product={product} />
-      </div>
+      </Link>
     ))}
   </div>
 <Link href='/products' className='mt-10 border border-[#EC6A37] p-2 w-fit text-center rounded-lg text-[#EC6A37] text-base font-bold hover:scale-105 transition duration-300 cursor-pointer hover:bg-[#EC6A37] hover:text-white mx-auto block'>
